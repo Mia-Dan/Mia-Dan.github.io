@@ -10,12 +10,22 @@
       <img src="/images/bird.png" alt="test image" width="30px">
       Search Pages with Bing:
     </h1>
-    <p> </p>
+    <p>. </p>
+    <!-- Another commonly used method is "post".-->
+    <!-- use lower letters in <form> tag-->
     <form action="https://www.bing.com/search" method="get">
-        <!-- for it would be https://www.bing.com/search?q=... -->
+        <!-- assign to varible "q" 
+          -- for it should be https://www.bing.com/search?q=... -->
         <input name="q" type="search">
         <input type="submit" value="Search it!">
     </form>
+    <hr>
+    <p> After submitting keyword, we would be redirected into https://www.bing.com/search?q=... </p>
+    <p> -> "?" indicates that we’re adding inputs, which will be in the form of key-value pairs. "q" stands for "query".</p>
+    <br>
+    <p> In other cases we use method="post" instead of "get", so that inputs could never be found in our browser's history record.</p>
+    <p> Useful scenario: submitting password. </p>
+    <br>
     <p> Back to main page: <a href="https://mia-dan.github.io/">main page</a>.</p>
   </body>
 </html>
